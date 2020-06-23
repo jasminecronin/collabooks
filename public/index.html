@@ -1,0 +1,107 @@
+<!-- /************************** COLLABOOKS Final Project ***************************
+       _____ ____  _      _               ____   ____   ____  _  __ _____
+     / ____/ __ \| |    | |        /\   |  _ \ / __ \ / __ \| |/ // ____|
+    | |   | |  | | |    | |       /  \  | |_) | |  | | |  | | ' /| (___
+    | |   | |  | | |    | |      / /\ \ |  _ <| |  | | |  | |  <  \___ \
+    | |___| |__| | |____| |____ / ____ \| |_) | |__| | |__| | . \ ____) |
+    \_____\____/|______|______/_/    \_|____/ \____/ \____/|_|\_|_____/
+
+            ______......-----~~~~~~~--..__   __..--~~~~~~~-----......______
+          //   Members:                   `V'                            \\
+        //        Jasmine Cronin          |           Ashley Millette    \\
+      //       Brandt Davis              |         Siobhan O’Dell        \\
+    //     Patrick Matchett             |        Kent Wong               \\
+  //_______......------~~~~~~~~--..__  | __..--~~~~~~~~-----......_______\\
+//_______..........------~~~~~~...__\ | /__...~~~~~~------........_______\\
+===================================\\|//===================================
+                                  `----`
+                          Created On: 11/03/2020
+                        Last revision: 19/04/2020
+****************************************************************************/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- To set viewport so it can look good on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="48x48">
+
+    <title>Collabooks</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" >
+
+    <!-- Our Javascript -->
+    <script src="index.js"></script>
+
+    <!-- Login code -->
+    <script src="login.js"></script>
+
+    <!-- Database API code -->
+    <script src="ajaxapi.js"></script>
+
+</head>
+  <body>
+    <div id="loginContainer" class="col-4 container justify-content-center">
+
+        <!-- /************ Logo ************/ -->
+        <div class="row text-center">
+            <img id="loginLogo" class="img-fluid" src="logo.jpg" alt="Collabooks">
+        </div>
+        <!-- /******** End of Logo ********/ -->
+
+        <!-- /************ Form ************/ -->
+        <div class="row text-center">
+            <form id="loginForm" class="well">
+                <div class="form-group text-left">
+                    <label for="usernameInput">Username</label>
+                    <input type="email" class="form-control form-control-lg" id="usernameInput" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group text-left">
+                    <label for="passwordInput">Password</label>
+                    <input type="password" class="form-control form-control-lg" id="passwordInput" placeholder="Password">
+                </div>
+
+                <a id="submit" type="submit" class="btn btn-primary btn-lg" onclick="auth()">Sign In</a>
+
+            </form>
+        </div>
+        <!-- /******** End of Form ********/ -->
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginAlertDialog" tabindex="-1" role="dialog" aria-labelledby="loginAlertDialogLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginAlertDialogLabel">Login Failure</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="loginAlertMessage" class="modal-body">
+            Message
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
