@@ -1,19 +1,13 @@
-# COLLABOOKS
-/************************** COLLABOOKS Final Project ***************************
- 
-Members:                   
-* Jasmine Cronin
-* Brandt Davis   
-* Patrick Matchett     
-* Ashley Millette 
-* Siobhan O’Dell
-* Kent Wong
+# Web Based Systems Group Project
 
-How to install:
+Authored by: Jasmine Cronin, Brandt Davis, Patrick Matchett, Ashley Millette, Chevy Odell, Kent Wong 
 
-1) Deploy package to selected destination
-2) go to root of project and run ```npm install```
-3) in console, type ```node server.js```
-The application should be running and listening
-on port 3000 as default
-4) Go to ```localhost:3000``` on your browser of choice
+![cap](https://github.com/jasminecronin/collabooks/blob/master/cap1.png)
+
+![cap](https://github.com/jasminecronin/collabooks/blob/master/cap4.png)
+
+## Deployment Instructions
+
+![cap](https://github.com/jasminecronin/collabooks/blob/master/cap2.png)
+
+![cap](https://github.com/jasminecronin/collabooks/blob/master/cap3.png)
